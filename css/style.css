@@ -1,0 +1,149 @@
+/*Changing The Default Settings*/
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  /* Changing the body here*/
+  body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+    font-size: 45px;
+  }
+  .container{
+      display: flex;
+      flex-direction: column;
+      gap: 4vh;
+      padding : 4vh;
+      border: 1vh solid #48CAE4;
+  }
+  .block-1, .block-2, .block-3{
+      display: flex;
+      flex-direction: row;
+      height: 100vh-2vh;
+      gap: 8vh;
+      padding: 8px;
+  }
+  .box-1, .box-2, .box-3{
+      gap: 4vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border : 2px solid black;
+      border-radius: 10px;
+      background-color: #c1c1c1;
+      flex-grow: 1;
+  }
+  @media screen and (max-width: 480px){
+    .box-1, .box-2, .box-3{
+        flex-direction: column;
+        height: 500px;
+    }
+  }
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-one{
+    display: flex;
+    flex-direction: column;
+}
+ul, li, a{
+    margin: 2px;
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+    text-decoration-line: none;
+}
+.items, li, a{
+    padding: 8px;
+}
+.myContainer{
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+     padding: 10px;
+    border: 1vh solid #c1c1c1;
+}
+/* $bp : (
+  mobile : 480px,
+  tablet : 768px,
+  desktop : 1440px,
+); */
+@media screen  and (max-width: 768px) {
+    .myContainer{
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 320px) {
+    .myContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.header-3{
+    display: flex;
+    padding: 40px;
+    flex-direction: row;
+    gap: 2vh;
+}
+@media screen and (max-width: 320px) {
+    .header-3{
+        flex-direction: column;
+    }
+}
+.container-me{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 2vh;
+}
+.tuo-1, .tuo-2, .tuo-3{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+@media screen and (max-width: 320px) {
+    .tuo-1, .tuo-2, .tuo-3{
+        flex-direction: column;
+    }
+}
+.mio-1, .mio-2, .mio-3, .mio-3, .mio-4, .mio-5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border : 1vh solid #FF0;
+  border-radius: 10px;
+  background-color: #c1c1c1;
+}
+
+.mio-1{
+  flex-basis: 100%;
+}
+
+
+.mio-2, .mio-5{
+  flex-basis: 70%;
+}
+
+.mio-3,.mio-4{
+  flex-basis: 30%
+}
+@media screen and (max-width: 340px) {
+    .tuo-2{
+        height: (100vh*2)/3;
+    }
+    .tuo-3{
+        flex-direction: row;
+      }
+      .tuo-2,.tuo-3,.tuo-4,.tuo-5{
+        flex-basis: 50%;
+      }
+}
