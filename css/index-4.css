@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    padding: 8px;
+    text-decoration: none;
+    list-style: none;
+}
+.nav-links > li > a:hover{
+    background-color: #f1c40f;
+    color: #ffffff;
+    
+}
+.nav-links > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+.header-section{
+    background-color: #000;
+    font-size: 20px;
+}
+ion-icon {
+    --ionicon-stroke-width: 16px;
+    font-size: 32px;
+    margin: 8px;
+  }
+.logo-facebook{
+    color: #3498db;
+}
+.logo-twitter{
+    color: #2980b9;
+}
+.logo-youtube{
+    color: #e74c3c;
+}
+.logo-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+.logo-instagram{
+    color: #e74c3c;
+}
+.logo-linkediln{
+    color: #2980b9;
+}
+.logo-wrapper > img{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: row;
+}
+.gallary-cell{
+    width: 66%;
+    height: 800px;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+}
+@media screen and ( min-width: 768px ) {
+    /* half-width cells for larger devices */
+    .gallary-cell { width: 100%; }
+  }
+  @media screen and ( min-width: 768px ) {
+    
+    .carousel-cell { width: 50%; }
+  }
+  .flickity-button{
+      background: #ffffff;
+      
+  }
+  .flickity-button:hover{
+      background: #f39c12;
+  }
+  
+  .flickity-pre-next-button{
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+  }
+  /*icons color */
+  .flickity-button-icon{
+      fill:  #000;
+  }
+  /* position outside */
+  .flickity-pre-next-button.previous{
+      left: -40px;
+  }
+  .flickity-pre-next-button.next{
+      right: -40px;
+  }
+  .flickity-button:focus{
+      outline: none;
+      box-shadow: 0 0 0 5px #19F;
+  }
+  /* position dots in carousel */
+  .flickity-page-dots{
+      bottom: 0px;
+  }
+  /* white circles */
+  .flickity-page-dots .dot{
+      width: 12px;
+      height: 12px;
+      opacity: 1;
+      background: transparent;
+      border: 2px solid #ffffff;
+  }
+  /* fill-in selected dot */
+.flickity-page-dots .dot.is-selected{
+    background: #ffffff;
+}
+.flickity-enabled:focus .flickity-viewport {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+

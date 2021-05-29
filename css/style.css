@@ -3,37 +3,36 @@
 *{
     margin:0px;
     padding: 0px;
-    box-sizing: border-box;
   }
   /* Changing the body here*/
   body{
-    width: 100%;
-    min-height: 100vh;
+      width: 100%;
     font-family: sans-serif;
-    font-size: 45px;
+    font-size: 20px;
   }
   .container{
       display: flex;
       flex-direction: column;
-      gap: 4vh;
-      padding : 4vh;
-      border: 1vh solid #48CAE4;
+      padding : 8px;
   }
-  .block-1, .block-2, .block-3{
-      display: flex;
-      flex-direction: row;
-      height: 100vh-2vh;
-      gap: 8vh;
-      padding: 8px;
+  .block-1{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    padding: 8px;
   }
+  .nav--bg__setup{
+      background-color: #000;
+      color: #fff;
+      
+  }
+   
   .box-1, .box-2, .box-3{
       gap: 4vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      border : 2px solid black;
-      border-radius: 10px;
-      background-color: #c1c1c1;
+      /*background-color: #c1c1c1;*/
       flex-grow: 1;
   }
   @media screen and (max-width: 480px){
@@ -49,6 +48,11 @@
     justify-content: space-between;
     align-items: center;
 }
+ img{
+    width: 100px;
+    height: 50px;
+    top: 10px;
+}
 .link-one{
     display: flex;
     flex-direction: column;
@@ -59,91 +63,27 @@ ul, li, a{
     list-style-type: none;
     padding: 20px;
     text-decoration-line: none;
+    color: #fff;
 }
 .items, li, a{
     padding: 8px;
 }
-.myContainer{
-    font-size: 35px;
+.video__footage-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-     padding: 10px;
-    border: 1vh solid #c1c1c1;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
-/* $bp : (
-  mobile : 480px,
-  tablet : 768px,
-  desktop : 1440px,
-); */
-@media screen  and (max-width: 768px) {
-    .myContainer{
-        height: 100vh;
-    }
+.video--footage{
+   position: absolute;
+   top: 0;
+   left: 0;
+    width: 100%;
 }
-@media screen and (max-width: 320px) {
-    .myContainer{
-        flex-direction: column;
-        align-items: center;
-    }
-}
-.header-3{
+.card-section{
     display: flex;
-    padding: 40px;
-    flex-direction: row;
-    gap: 2vh;
-}
-@media screen and (max-width: 320px) {
-    .header-3{
-        flex-direction: column;
-    }
-}
-.container-me{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        gap: 2vh;
-}
-.tuo-1, .tuo-2, .tuo-3{
-    display: flex;
-    flex-direction: row;
-    gap: 2vh;
-}
-
-@media screen and (max-width: 320px) {
-    .tuo-1, .tuo-2, .tuo-3{
-        flex-direction: column;
-    }
-}
-.mio-1, .mio-2, .mio-3, .mio-3, .mio-4, .mio-5{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border : 1vh solid #FF0;
-  border-radius: 10px;
-  background-color: #c1c1c1;
-}
-
-.mio-1{
-  flex-basis: 100%;
-}
-
-
-.mio-2, .mio-5{
-  flex-basis: 70%;
-}
-
-.mio-3,.mio-4{
-  flex-basis: 30%
-}
-@media screen and (max-width: 340px) {
-    .tuo-2{
-        height: (100vh*2)/3;
-    }
-    .tuo-3{
-        flex-direction: row;
-      }
-      .tuo-2,.tuo-3,.tuo-4,.tuo-5{
-        flex-basis: 50%;
-      }
+    margin: 20px;
 }
